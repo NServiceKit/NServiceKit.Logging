@@ -23,6 +23,7 @@ namespace NServiceKit.Logging.Tests.Support
         [TearDown]
         protected virtual void TearDown()
         {
+            mocks.BackToRecordAll();
             mocks = null;
         }
 
