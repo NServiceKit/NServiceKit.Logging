@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>NServiceKit.Logging.EntLib5</id>
+    <version>1.0.1</version>
+    <title>NServiceKit.Logging.EntLib5</title>
+    <authors>Demis Bellot</authors>
+    <owners>NServiceKit</owners>
+    <summary>Enterprise Library 5.0 Logging Application Block integration for NServiceKit, the Opensource .NET and Mono REST Web Services Framework</summary>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Provides Enterprise Library 5.0 Logging Application Block logging integration for other NServiceKit projects
+    </description>
+    <projectUrl>https://github.com/NServiceKit/NServiceKit.Logging</projectUrl>
+    <licenseUrl>https://github.com/NServiceKit/NServiceKit/blob/v3/LICENSE</licenseUrl>
+    <iconUrl>http://www.NServiceKit.net/logo-100x100.png</iconUrl>
+    <tags>NServiceKit log logging nlog</tags>
+    <language>en-US</language>
+    <copyright>NServiceKit 2014 and contributors</copyright>
+    <dependencies>
+      <dependency id="EnterpriseLibrary.Logging" version="5.0.505.1" />
+      <dependency id="NServiceKit.Common" version="[1,2)" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="lib\**\*.*" target="lib" />
+    <file src="..\..\src\NServiceKit.Logging.EntLib5\**\*.cs" target="src" />
+  </files>
+</package>
