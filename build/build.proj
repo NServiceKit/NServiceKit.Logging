@@ -63,7 +63,7 @@
       Properties="Configuration=$(Configuration)" />
   </Target>
 
-  <Target Name="NuGetPack">
+  <Target Name="NuGetPack" DependsOnTargets="$(DoBuildSolutionsDependsOn)">
 
     <Delete Files="@(NugetPackageFilesToDelete)" />
 
