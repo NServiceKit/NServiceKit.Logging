@@ -103,3 +103,4 @@ packages/
 *.sig
 *.tmp
 Backup*
+NuGet/**/*.dll
