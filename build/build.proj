@@ -92,9 +92,6 @@
     <MakeDir Directories="$(NuGetPackageDir)/NServiceKit.Logging.Elmah/lib/net35" Condition="!Exists('$(NuGetPackageDir)/NServiceKit.Logging.Elmah/lib/net35')" />
     <Copy SourceFiles="%(ElmahFiles.Identity)" DestinationFolder="$(NuGetPackageDir)/NServiceKit.Logging.Elmah/lib/net35" />
 
-    <Exec Command="&quot;$(NuGetPath)&quot; pack &quot;$(NuGetPackageDir)/NServiceKit.Logging.Elmah/NServiceKit.logging.elmah.nuspec&quot; -OutputDirectory &quot;$(NuGetPackageDir)&quot; -Version $(PackageVersion) -Symbols"
-            LogStandardErrorAsError="true" />
-
     <!-- NServiceKit.Logging.EntLib5 -->
 
     <MSBuild Projects="$(SrcDir)/NServiceKit.Logging.EntLib5/NServiceKit.Logging.EntLib5.csproj"
@@ -103,9 +100,6 @@
 
     <MakeDir Directories="$(NuGetPackageDir)/NServiceKit.Logging.EntLib5/lib/net35" Condition="!Exists('$(NuGetPackageDir)/NServiceKit.Logging.EntLib5/lib/net35')" />
     <Copy SourceFiles="%(EntLib5Files.Identity)" DestinationFolder="$(NuGetPackageDir)/NServiceKit.Logging.EntLib5/lib/net35" />
-
-    <Exec Command="&quot;$(NuGetPath)&quot; pack &quot;$(NuGetPackageDir)/NServiceKit.Logging.EntLib5/NServiceKit.logging.entlib5.nuspec&quot; -OutputDirectory &quot;$(NuGetPackageDir)&quot; -Version $(PackageVersion) -Symbols"
-            LogStandardErrorAsError="true" />
 
     <!-- NServiceKit.Logging.EventLog -->
 
@@ -116,9 +110,6 @@
     <MakeDir Directories="$(NuGetPackageDir)/NServiceKit.Logging.EventLog/lib/net35" Condition="!Exists('$(NuGetPackageDir)/NServiceKit.Logging.EventLog/lib/net35')" />
     <Copy SourceFiles="%(EventLogFiles.Identity)" DestinationFolder="$(NuGetPackageDir)/NServiceKit.Logging.EventLog/lib/net35" />
 
-    <Exec Command="&quot;$(NuGetPath)&quot; pack &quot;$(NuGetPackageDir)/NServiceKit.Logging.EventLog/NServiceKit.logging.eventlog.nuspec&quot; -OutputDirectory &quot;$(NuGetPackageDir)&quot; -Version $(PackageVersion) -Symbols"
-            LogStandardErrorAsError="true" />
-
     <!-- NServiceKit.Logging.Log4Net -->
 
     <MSBuild Projects="$(SrcDir)/NServiceKit.Logging.Log4Net/NServiceKit.Logging.Log4Net.csproj"
@@ -127,9 +118,6 @@
 
     <MakeDir Directories="$(NuGetPackageDir)/NServiceKit.Logging.Log4Net/lib/net35" Condition="!Exists('$(NuGetPackageDir)/NServiceKit.Logging.Log4Net/lib/net35')" />
     <Copy SourceFiles="%(Log4NetFiles.Identity)" DestinationFolder="$(NuGetPackageDir)/NServiceKit.Logging.Log4Net/lib/net35" />
-
-    <Exec Command="&quot;$(NuGetPath)&quot; pack &quot;$(NuGetPackageDir)/NServiceKit.Logging.Log4Net/NServiceKit.logging.log4net.nuspec&quot; -OutputDirectory &quot;$(NuGetPackageDir)&quot; -Version $(PackageVersion) -Symbols"
-            LogStandardErrorAsError="true" />
 
     <!-- NServiceKit.Logging.Log4Netv1210 -->
 
@@ -140,9 +128,6 @@
     <MakeDir Directories="$(NuGetPackageDir)/NServiceKit.Logging.Log4Netv1210/lib/net35" Condition="!Exists('$(NuGetPackageDir)/NServiceKit.Logging.Log4Netv1210/lib/net35')" />
     <Copy SourceFiles="%(Log4Netv1210Files.Identity)" DestinationFolder="$(NuGetPackageDir)/NServiceKit.Logging.Log4Netv1210/lib/net35" />
 
-    <Exec Command="&quot;$(NuGetPath)&quot; pack &quot;$(NuGetPackageDir)/NServiceKit.Logging.Log4Netv1210/NServiceKit.logging.log4netv1210.nuspec&quot; -OutputDirectory &quot;$(NuGetPackageDir)&quot; -Version $(PackageVersion) -Symbols"
-            LogStandardErrorAsError="true" />
-
     <!-- NServiceKit.Logging.Log4Netv129 -->
 
     <MSBuild Projects="$(SrcDir)/NServiceKit.Logging.Log4Netv129/NServiceKit.Logging.Log4Netv129.csproj"
@@ -152,8 +137,6 @@
     <MakeDir Directories="$(NuGetPackageDir)/NServiceKit.Logging.Log4Netv129/lib/net35" Condition="!Exists('$(NuGetPackageDir)/NServiceKit.Logging.Log4Netv129/lib/net35')" />
     <Copy SourceFiles="%(Log4Netv129Files.Identity)" DestinationFolder="$(NuGetPackageDir)/NServiceKit.Logging.Log4Netv129/lib/net35" />
 
-    <Exec Command="&quot;$(NuGetPath)&quot; pack &quot;$(NuGetPackageDir)/NServiceKit.Logging.Log4Netv129/NServiceKit.logging.log4netv129.nuspec&quot; -OutputDirectory &quot;$(NuGetPackageDir)&quot; -Version $(PackageVersion) -Symbols"
-            LogStandardErrorAsError="true" />
 
     <!-- NServiceKit.Logging.NLog -->
 
@@ -163,6 +146,24 @@
 
     <MakeDir Directories="$(NuGetPackageDir)/NServiceKit.Logging.NLog/lib/net35" Condition="!Exists('$(NuGetPackageDir)/NServiceKit.Logging.NLog/lib/net35')" />
     <Copy SourceFiles="%(NLogFiles.Identity)" DestinationFolder="$(NuGetPackageDir)/NServiceKit.Logging.NLog/lib/net35" />
+
+    <Exec Command="&quot;$(NuGetPath)&quot; pack &quot;$(NuGetPackageDir)/NServiceKit.Logging.Elmah/NServiceKit.logging.elmah.nuspec&quot; -OutputDirectory &quot;$(NuGetPackageDir)&quot; -Version $(PackageVersion) -Symbols"
+            LogStandardErrorAsError="true" />
+
+    <Exec Command="&quot;$(NuGetPath)&quot; pack &quot;$(NuGetPackageDir)/NServiceKit.Logging.EntLib5/NServiceKit.logging.entlib5.nuspec&quot; -OutputDirectory &quot;$(NuGetPackageDir)&quot; -Version $(PackageVersion) -Symbols"
+            LogStandardErrorAsError="true" />
+
+    <Exec Command="&quot;$(NuGetPath)&quot; pack &quot;$(NuGetPackageDir)/NServiceKit.Logging.EventLog/NServiceKit.logging.eventlog.nuspec&quot; -OutputDirectory &quot;$(NuGetPackageDir)&quot; -Version $(PackageVersion) -Symbols"
+            LogStandardErrorAsError="true" />           
+
+    <Exec Command="&quot;$(NuGetPath)&quot; pack &quot;$(NuGetPackageDir)/NServiceKit.Logging.Log4Net/NServiceKit.logging.log4net.nuspec&quot; -OutputDirectory &quot;$(NuGetPackageDir)&quot; -Version $(PackageVersion) -Symbols"
+            LogStandardErrorAsError="true" />
+
+    <Exec Command="&quot;$(NuGetPath)&quot; pack &quot;$(NuGetPackageDir)/NServiceKit.Logging.Log4Netv1210/NServiceKit.logging.log4netv1210.nuspec&quot; -OutputDirectory &quot;$(NuGetPackageDir)&quot; -Version $(PackageVersion) -Symbols"
+            LogStandardErrorAsError="true" />
+
+    <Exec Command="&quot;$(NuGetPath)&quot; pack &quot;$(NuGetPackageDir)/NServiceKit.Logging.Log4Netv129/NServiceKit.logging.log4netv129.nuspec&quot; -OutputDirectory &quot;$(NuGetPackageDir)&quot; -Version $(PackageVersion) -Symbols"
+            LogStandardErrorAsError="true" />
 
     <Exec Command="&quot;$(NuGetPath)&quot; pack &quot;$(NuGetPackageDir)/NServiceKit.Logging.NLog/NServiceKit.logging.nlog.nuspec&quot; -OutputDirectory &quot;$(NuGetPackageDir)&quot; -Version $(PackageVersion) -Symbols"
             LogStandardErrorAsError="true" />
