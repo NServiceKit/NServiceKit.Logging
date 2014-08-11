@@ -4,7 +4,7 @@
     <id>NServiceKit.Logging.Log4Netv1210</id>
     <version>1.0.1</version>
     <title>NServiceKit.Logging.Log4Netv1210</title>
-    <authors>Demis Bellot</authors>
+    <authors>NServiceKit, Demis Bellot</authors>
     <owners>NServiceKit</owners>
     <summary>log4Net 1.2.10 logging integration for NServiceKit, the Opensource .NET and Mono REST Web Services Framework</summary>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

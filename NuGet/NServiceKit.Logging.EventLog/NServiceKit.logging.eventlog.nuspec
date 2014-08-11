@@ -4,7 +4,7 @@
     <id>NServiceKit.Logging.EventLog</id>
     <version>1.0.1</version>
     <title>NServiceKit.Logging.EventLog</title>
-    <authors>Demis Bellot</authors>
+    <authors>NServiceKit, Demis Bellot</authors>
     <owners>NServiceKit</owners>
     <summary>Windows Event Log integration for NServiceKit, the Opensource .NET and Mono REST Web Services Framework</summary>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

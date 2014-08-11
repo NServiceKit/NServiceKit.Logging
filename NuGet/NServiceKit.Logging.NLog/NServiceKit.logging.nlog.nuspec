@@ -4,7 +4,7 @@
     <id>NServiceKit.Logging.NLog</id>
     <version>1.0.1</version>
     <title>NServiceKit.Logging.NLog</title>
-    <authors>Demis Bellot</authors>
+    <authors>NServiceKit, Demis Bellot</authors>
     <owners>NServiceKit</owners>
     <summary>NLog logging integration for NServiceKit, the Opensource .NET and Mono REST Web Services Framework</summary>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

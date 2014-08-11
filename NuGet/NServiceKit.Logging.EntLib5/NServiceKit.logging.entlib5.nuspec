@@ -4,7 +4,7 @@
     <id>NServiceKit.Logging.EntLib5</id>
     <version>1.0.1</version>
     <title>NServiceKit.Logging.EntLib5</title>
-    <authors>Demis Bellot</authors>
+    <authors>NServiceKit, Demis Bellot</authors>
     <owners>NServiceKit</owners>
     <summary>Enterprise Library 5.0 Logging Application Block integration for NServiceKit, the Opensource .NET and Mono REST Web Services Framework</summary>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
